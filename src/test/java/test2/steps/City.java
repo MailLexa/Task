@@ -32,11 +32,11 @@ public class City  extends  PageObject{
         getDriver().get("https://www.invitro.ru/radiology/");
     }
 
-    public  void popupCityVisible () throws InterruptedException {
-        setCity.waitUntilVisible();
+    public  void popupCityVisible ()  {
+        setCity.waitUntilVisible();  // Ждем пока не будет видим
         if ( setCity.isDisplayed())
             openPopup.click();
-        //Thread.sleep(1000);
+        
 
 
     }
